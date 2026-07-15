@@ -11,11 +11,9 @@ export default function AboutLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
-        <body>
-        {children}
-        <footer>About layout footer</footer>
-        </body>
-        </html>
+        <>
+            {children}
+            <footer>About layout footer</footer>
+        </>
     )
 }
