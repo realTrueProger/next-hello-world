@@ -9,6 +9,10 @@ export default async function ProductDetails({params}: {
         notFound()
     }
 
+    if (parseInt(productId) === 666) {
+        throw new Error('666 not allowed')
+    }
+
     return (
         <h1>Product {productId}</h1>
     )
